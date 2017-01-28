@@ -1,0 +1,128 @@
+body{
+  /*font-family:Avenir , "Open Sans" , "Helvetica Neue" , Helvetica , Arial , Verdana , Roboto , "游ゴシック" , "Yu Gothic" , "游ゴシック体" , "YuGothic" , "ヒラギノ角ゴ Pro W3" , "Hiragino Kaku Gothic Pro" , "Meiryo UI" , "メイリオ" , Meiryo , "ＭＳ Ｐゴシック" , "MS PGothic" , sans-serif;*/
+  font-family: 'Source Sans Pro W4', Helvetica, 'Yu Gothic', YuGothic, 'Hiragino Kaku Gothic Pro';
+  letter-spacing: 0.05rem; /*0.08rem*/
+  color: #575757;
+  /*font-size: 10px;*/
+  font-style: normal;
+  font-weight: 300;
+  /*letter-spacing: 0.08em;*/
+  line-height: 1.4em;
+  width: 100%;
+  height: auto;
+  line-height: 22px; /*27*/
+
+}
+.container-fluid{
+  margin: auto;
+  padding: 20px 50px ;
+}
+
+.container-fluid a:link {
+   color: #575757;
+}　
+.container-fluid a:visited {
+   color: #575757;
+ }　
+.container-fluid a:hover {
+   color: #575757;
+}　/*マウスオン時のリンクの色*/
+.container-fluid a:active {
+   color: #575757;
+}　/*クリックしている時のリンクの色*/
+
+.col-md-8{
+    padding-right: 150px;
+    padding-left: 150px;
+}
+#main{
+  width: 100%;
+  margin: 0px;
+  margin-right: 100px;
+  /*float: right;*/
+  /*padding-right: 50px;*/
+}
+#main img{
+  width: 80%;
+  /*width="92%"*/
+  height: auto;
+
+
+  margin-right: 15px;
+  margin-left: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.col-xs-6 img{
+  width: 100%;
+  height: auto;
+}
+.col-xs-6 {
+  text-align: center;
+}
+
+#side {
+  position: relative;
+  /*top: 50px;*/
+  /*margin-left: 500px;*/
+  /*float: right;*/
+  /*width: 200px;*/
+  width: 40%;
+  padding: 0px;
+  margin-bottom: 50px;
+  /*padding: 55px;*/
+  /*padding-top: 55px;
+  margin-bottom: 80px;*/
+
+}
+.main h3{
+  /*font-weight: bold;*/
+}
+/*.main hr{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}*/
+.main h4{
+  font-weight: 300;
+  /*font-size: 1rem;*/
+  /*margin: 60px 0 20px 0;*/
+  /*clear: both;*/
+}
+.side a h2{
+  font-weight: 300;
+}
+.main #more{
+  padding: 0px;
+}
+
+/*992px以上のとき*/
+@media screen and ( min-width:992px )
+{
+
+  .container-fluid{
+    width: 100%;
+    padding: 100px
+  }
+
+  #side{
+    position: fixed;
+    /*background-color: gray;*/
+    right: -webkit-calc(100px - 10px * 2) ;
+    right: : calc(100px - 10px * 2) ;
+    width: -webkit-calc(200px + 10px * 2);
+    margin: 0px;
+    padding: 10px;
+  }
+  #main {
+    width: -webkit-calc(100% - 200px);
+    margin: 0px;
+    padding: 30px;
+
+  }
+
+	p
+	{
+		color: gray ;	/* 赤色 */
+	}
+
+}
