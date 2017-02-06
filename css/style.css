@@ -463,7 +463,7 @@ header.side{
 
 /*  */
 
-body.jins_visualization div.product-description img, body.kyun div.design img{
+body.jins_visualization div.product-description img, body.kyun div.design img, body.math-workshop div.design img{
   padding: 10px 10px 10px 0px;
 }
 /* 後で直す */
