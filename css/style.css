@@ -1,0 +1,514 @@
+body{
+  /*font-family:Avenir , "Open Sans" , "Helvetica Neue" , Helvetica , Arial , Verdana , Roboto , "游ゴシック" , "Yu Gothic" , "游ゴシック体" , "YuGothic" , "ヒラギノ角ゴ Pro W3" , "Hiragino Kaku Gothic Pro" , "Meiryo UI" , "メイリオ" , Meiryo , "ＭＳ Ｐゴシック" , "MS PGothic" , sans-serif;*/
+  font-family: 'Source Sans Pro', Helvetica, 'Yu Gothic', YuGothic, 'Hiragino Kaku Gothic Pro';
+  /*font-family: 'Source Sans Pro', Helvetica, 'Yu Gothic', YuGothic, 'Hiragino Gothic';*/
+  letter-spacing: 0.05rem; /*0.08rem*/
+
+  color: #575757;
+  /*font-size: 10px;*/
+  font-style: normal;
+  font-weight: 300;
+  /*letter-spacing: 0.08em;*/
+  width: 100%;
+  height: auto;
+  line-height: 22px; /*27*/
+
+}
+
+/*  */
+/* -------------------------------- 
+
+Primary style
+
+-------------------------------- */
+html * {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 100%;
+  font-family: "Roboto", 'Hiragino Kaku Gothic Pro', sans-serif, 'Source Sans Pro', Helvetica ;
+  color: #575757;
+  background-color: white;
+}
+
+body, html {
+  /* important */
+  height: 100%;
+}
+
+a {
+  color: #575757;
+  text-decoration: none;
+}
+
+/* -------------------------------- 
+
+Modules - reusable parts of our design
+
+-------------------------------- */
+.cd-container {
+  /* this class is used to give a max-width to the element it is applied to, and center it horizontally when it reaches that max-width */
+  width: 90%;
+  max-width: 1000px; /* 768px */
+  margin: 0 auto;
+}
+.cd-container::after {
+  /* clearfix */
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/* -------------------------------- 
+
+Main components 
+
+-------------------------------- */
+
+.cd-main-content {
+  height: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.cd-fixed-bg {
+  position: relative;
+  min-height: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  z-index: 1;
+
+  padding: 4em 4em;
+
+}
+.cd-fixed-bg.about-A {
+  min-height: 50%;
+}
+h1, h2 {
+  max-width: 1170px;
+  font-size: 30px;
+  font-size: 1.875rem; /* 1.875rem */
+  /*color: white;*/
+  font-weight: bold;
+}
+h3{
+  max-width: 1170px;
+  font-size: 30px;
+  font-size: 1.2rem; /* 1.875rem */  
+  font-weight: bold;
+}
+
+b{
+  font-weight: bold;
+}
+hr {
+  height: 1.5px;
+  border: none;
+  border-top: 1px #575757 solid;
+  width: 50px;
+  margin-bottom: 40px;
+  margin-top: 10px;
+  margin-left: 0px;
+  background-color: #575757; 
+  border: 0;
+}
+hr {
+  background-color: rgb(211, 45, 105);
+}
+.mission hr, .design hr, .profile hr, .center hr{  
+  margin-left: auto;
+}
+
+.cd-fixed-bg h4, .center-wrap h4{
+
+  max-width: 1170px;
+  font-size: 30px;
+  font-size: 1.875rem;
+  font-weight: 700;
+  line-height: 2rem;  
+  color: white;
+
+}
+
+.center-wrap p{
+  max-width: 1170px;
+  /*font-size: 30px;*/
+  /*font-size: 1.875rem;*/
+  /*font-weight: 300;*/
+  line-height: 3rem;
+  color: white;
+}
+
+h5 {
+  margin-top: 5rem;
+}
+
+
+.cd-fixed-bg.cd-bg-1 {
+  background-image: url("../img/cd-background-1.jpg");
+}
+.cd-fixed-bg.cd-bg-2 {
+  background-image: url("../img/cd-background-2.jpg");
+}
+.cd-fixed-bg.cd-bg-3 {
+  background-image: url("../img/cd-background-3.jpg");
+}
+.cd-fixed-bg.cd-bg-4 {
+  background-image: url("../img/cd-background-4.jpg");
+}
+
+body.jins_visualization .cd-fixed-bg.cd-bg-1{
+  background-image: url("../projects/international-space-station.jpg");  
+}
+div.mission{
+  /*color: #575757;*/
+  text-align: center;
+}
+div.center {
+  text-align: center;
+}
+body.gambarimieru .cd-fixed-bg.cd-bg-1{
+  background-image: url("../projects/school-ground2.jpg");  
+}
+body.gambarimieru .cd-fixed-bg.cd-bg-2{
+  background-image: url("../img/bg-smartphone.jpeg");
+  color: white;
+}
+body.kyun .cd-fixed-bg.cd-bg-1{
+  background-image: url("../projects/kyun-background.jpg");
+}
+body.math-workshop .cd-fixed-bg.cd-bg-1{
+  background-image: url("../img/bg-math-warkshop-1.jpg");
+  min-height: 70%;
+  color: white;
+  text-align: center;
+  padding-top: 20%;
+}
+body.math-workshop .cd-fixed-bg.cd-bg-1 p{
+  size: 60rem;
+}
+section{
+  padding: 2em 0;
+}
+body.index img{
+  padding: 20px;
+}
+
+div.about-C div.col-md-4{
+  padding: 30px;
+}
+div.target-user div.back-white div{
+  max-width: 18rem;
+  margin: auto;
+  padding: 0;
+}
+div.target-user div.back-white ul{
+  margin-left: 0;
+  margin-right: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .cd-fixed-bg h4 {
+    font-size: 36px;
+  }
+}
+@media only screen and (min-width: 1170px) {
+  .cd-fixed-bg {
+    background-attachment: fixed;
+  }
+
+  .cd-fixed-bg h4 {
+    font-size: 48px;
+    /*font-weight: 300;*/
+  }
+}
+
+.cd-scrolling-bg {
+  position: relative;
+  min-height: 40%; /* 100% */
+  padding: 4em 4em; /* 4em 0 */
+  line-height: 1.6; /*1.6*/
+  z-index: 2;
+}
+.cd-scrolling-bg.cd-color-1 {
+  background-color: #eeeeee;
+  color: #575757;
+}
+.cd-scrolling-bg.cd-color-2 {
+  background-color: #ffffff;
+  color: #575757;
+}
+.cd-scrolling-bg.cd-color-4 {  
+  background: rgba(15, 70, 112, 0.1);
+/*  background-image: radial-gradient(#ffffee 20%, transparent 0), radial-gradient(#ffffee 20%, transparent 0);
+  background-position: 0 0, 10px 10px;
+  background-size: 20px 20px;*/
+}
+
+.cd-scrolling-bg.cd-color-dark {
+  background-color: rgb(15, 70, 112);
+  color: white;
+}
+.cd-scrolling-bg.cd-color-dark-jins_visualization{
+  background-color: rgb(9, 52, 87);
+  color: white;
+}
+.cd-scrolling-bg.cd-color-light-jins_visualization{
+  background-color: rgba(9, 52, 87, 0.1);
+  color: #575757;
+}
+.cd-scrolling-bg.cd-color-dark-kyn{
+  background-color: rgb(50, 83, 114);
+  color: white;
+}
+.cd-scrolling-bg.cd-color-light-kyn{
+  background-color: rgba(50, 83, 114, 0.1);
+  color: #575757;
+}
+
+.cd-scrolling-bg.cd-color-black{
+  background-color: black;
+  color: white;
+}
+@media only screen and (min-width: 768px) {
+  .cd-scrolling-bg, .cd-fixed-bg {
+    padding: 5em 5em; /* 8em 0 */
+    font-size: 20px;
+    font-size: 0.8rem; /* 1.25 */
+    line-height: 2;
+    font-weight: 300;
+  }
+  section{
+    padding: 3em 0;
+  }
+}
+
+/*  */
+
+
+/*body レベル*/
+body.jins_visualization div.about-A, body.gambarimieru div.about-A{
+  color: white;
+}
+
+/*sectionレベル*/
+section.roles, section.priduct-desctription{
+  background-color: #eeeeee;
+  /*z-index: 1;*/
+}
+section.product-description{
+  background-color: #eeeeee;
+}
+
+/*divレベル*/
+
+/*others*/
+div.videoWrapper{
+ /* position: relative;
+  padding-bottom: 40%;*/
+   /* 16:9 63%?*/
+  /*padding-top: 40%;*/
+  /*height: 0;*/
+
+
+  position: relative;
+  height: 0;
+  padding: 30px 0 56.25%;
+  overflow: hidden;
+
+}
+div.videoWrapper iframe{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+div.about-A div.back-white{
+  background: rgba(255, 255, 255,0.8);
+  color: #575757;
+  padding: 30px;
+  margin: 30px 0;
+}
+div.product-description div.back-white{
+  background: rgba(255, 255, 255,0.8);
+  color: #575757;
+  padding: 30px;
+}
+div.product-description ul{
+  text-align: left;
+  margin: 2rem 5rem;
+}
+div.product-description div.back-white{
+  margin: auto;
+  text-align: center;
+}
+.col-md-8{
+    padding-right: 150px;
+    padding-left: 150px;
+}
+#main{
+  width: 100%;
+  margin: 0px;
+}
+.col-xs-6 img{
+  width: 100%;
+  height: auto;
+}
+.col-xs-6 {
+  text-align: center;
+}
+
+#side {
+  z-index: 5;
+  position: relative;
+  /*top: 50px;*/
+  /*margin-left: 500px;*/
+  /*float: right;*/
+  /*width: 200px;*/
+  width: 40%; /*40*/
+  padding: 0px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  /*padding: 55px;*/
+  /*padding-top: 55px;
+  margin-bottom: 80px;*/
+  text-align: center;
+  color: #575757;  
+  font-weight: 300;
+  font-size: 0.9rem;
+
+}
+
+.side_btn{  
+  transition: all .5s;
+  display: inline-block;
+  text-decoration: none;
+  border: 1px solid #575757;
+  border-radius: 2px;
+  padding: 10px 20px;
+  margin-top: 10px;
+  width: 70%;
+  color: #575757;
+  background: white;
+}
+.side_btn:hover{
+  color: white;
+  background: #575757;
+}
+.side span{
+  background: white;
+  padding: 4px;
+  font-weight: 300;
+  color: #575757;
+}
+
+/*992px以上のとき*/
+@media screen and ( min-width:992px )
+{
+
+
+  #side{
+    position: fixed;
+    right: -webkit-calc(100px - 10px * 5) ;
+    right: : calc(100px - 10px * 5) ;
+    width: -webkit-calc(200px);
+    margin: 0px;
+    padding: 10px;
+  }
+  #main {
+    /*width: -webkit-calc(100% - 200px);*/
+    width: 100%;
+    margin: 0px; /*0*/
+    padding: 0px; /*30*/
+
+  }
+
+}
+
+/*  */
+
+body.jins_visualization div.product-description img, body.kyun div.design img{
+  padding: 10px 10px 10px 0px;
+}
+/* 後で直す */
+div.about-A div.video div.videoWrapper{
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(50%); /* Safari用 */
+  transform: translateY(50%);
+}
+div.about-A img.img-responsive{
+  margin: auto;
+}
+div.about-A img.logo{
+  margin-left: 0;
+  margin-right: auto;
+}
+
+table th{
+  min-width: 80px;
+  /*padding-bottom: 30px;*/
+  /*padding-top: 0px;*/
+}
+table td{
+  padding-left: 50px; 
+  padding-top: 5px;
+}
+.product-description table th{
+  min-width: 50px;
+}
+.product-description table td{
+  padding-top: 15px;
+}
+.product-description .row {
+  /*margin: auto;*/
+  /*text-align: center;*/
+}
+.product-description .row .col-md-6{
+  /*margin: auto;*/
+  /*text-align: left;*/
+  padding: auto;
+}
+.about-A .col-md-6{ /* いらない？ */
+  margin: auto;
+}
+body.gambarimieru div.product-description div.target-user img{
+  margin: auto;
+  /*max-width: 70%;*/
+  padding: 30px 0;
+  max-height: 20rem;
+
+}
+body.gambarimieru div.product-description div.row{
+  margin-top: 3rem
+}
+
+div.list-disc ul{
+  margin-left: 1.5rem;
+  list-style-type: disc;
+}
+div.solution img{
+  max-width: 80%;
+  margin: auto;
+  margin-top: 2rem;
+}
+body.kyun div.design div.row{
+  margin-top: 3rem;
+}
+body.index .row{
+  margin-bottom: 4rem;
+}
+.center-wrap{
+  text-align: center;
+}
+

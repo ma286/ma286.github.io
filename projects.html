@@ -5,7 +5,7 @@
     <title>kiya portfolio</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 
     <!-- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script> -->
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
@@ -14,192 +14,84 @@
     <script type="text/javascript" src="js/jquery.js"></script>
     <script src="js/smooth-scroll.js"></script>
   </head>
-  <body>
+  <body class="jins_visualization">
     <div class="container-fluid">
       <!-- デスクトップ：右　スマホ：上 -->
       <div id="side" class="side" >
-        <img src="img/sample.jpg" alt="sample" width="200px" height="200px"><br>
-        <h2><a href="index.html">Marika Kiya</a></h2>
-        <a href="profile.html">Profile</a><br>
-        <a href="projects.html">Projects</a><br>
-        <hr>
+        <p><a href="index.html"><span>Marika Kiya</span></a></p>
+        <a href="profile.html" class="side_btn">Profile</a><br>
+        <a href="projects.html" class="side_btn">Projects</a><br>
         <div id="nav">
-          <a data-scroll href="#jins_visualization">人の心と体の動きの可視化</a><br>
+          <!-- <a data-scroll href="#jins_visualization">人の心と体の動きの可視化</a><br>
           <a data-scroll href="#digital_app">がんばりみえるくん</a><br>
           <a data-scroll href="#kyun">くりっきゅん</a><br>
           <a data-scroll href="#name">名前のグラフィック</a><br>
-          <a data-scroll href="#math">小学校での授業</a><br>
+          <a data-scroll href="#math">小学校での授業</a><br> -->
         </div>
       </div>
       <!-- デスクトップ：左　スマホ：下 -->
       <div id="main" class="main">
-    
-        <div class=" " id="jins_visualization">
-          <h3 id="">人の心と体の動きの可視化 -JINS MEME-</h3>
-          <iframe src="https://player.vimeo.com/video/201388051" width="640" height="397" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-<p><a href="https://vimeo.com/201388051">Mind and body visualization</a> from <a href="https://vimeo.com/user47875405">ma286</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
-          <p>
-            <b>【作業期間】</b>2016年6月-7月<br>
-            <b>【作業ボリューム】</b>コード数 約700行<br>
-            <b>【人数】</b>1人<br>
-            <b>【担当工程】</b>JINSMEMEというセンサーのついたメガネでデータを収集し、それをプログラムで読み込み、制作しました。収集したデータのうち、何の数値を用いるとどんな形になるのか、どんな意味を込められるのかを考えながらコンセプトを練りました。<br>
-            <b>【使用ツール】</b>Xcode, openFrameworks<br>
-            <b>【使用言語】</b>C++<br>
-            <b>【対応ディバイス】</b>PC<br>
-            <b>【制作したきっかけ】</b>他大学で受講していた授業の課題として制作しました。テーマや技術の指定はなく、「制作プロセスの中のどこかで、必ずプログラミングをすること」という条件の課題です。<br>
-            <br>
-            <b>【コンセプト・詳細】</b><br>
-            制作物は、近い環境で生活する2人の学生の、目には見えない心の動きと体の変化を可視化した映像です。ここから、近い環境で生活している人たちでも、大きく違いがあることが分かります。ならば、環境が大きく異なる人、通った学校や育った国、信じている宗教が異なる人と価値観や表現が違うのは当たり前ではないでしょうか。
-            <br>
-            <br>
-            お互いに違うところがある、というのはなんとなく多くの人が認識していることだと思います。それをより自分ごとにして、さらに視点を広げてほしい、認め合ってほしいと思い、可視化というより具体的な形にしました。
-            <br>
-            <br>
-            この作品の表現には、それぞれ以下のような意味があります。            
-          </p>
-          <ul>
-            <li>時</li>
-                回転する時は、時間を示しています。その時間の心と体の変化に合わせて、線が変化します。
-            <li>色</li> 
-                精神の集中度を意味しています。色の変化が少ないほど、精神が集中しています。
-            <li>回転</li>
-                姿勢の動きを意味します。大きく回転するほど、姿勢の動きも活発です。
-            <li>線が2本</li>
-                2つ並べることで、見た人が比較することを促しています。
-            <li>形が球である点</li>
-                地球の丸い形とつなげています。これは、育った国や、信じている宗教が異なれば、心や体の変化の仕方が異なるのは当たり前ではないか、ということを、暗示しています。
-            <li>3次元である点</li>
-                多面的に見ることを暗示しています。人や物事は、見る角度によって、違う一面が浮かび上がってきます。それを暗示するために、この作品も角度によって見え方が変わるようにしました。
-          </ul>
-          <br>
-        </div>
-        <hr>
-        <div class=" " id="digital_app" >
-          <h3 >「Digital」を活用した教育サービス　がんばりみえるくん</h3>
-          <img src="projects/gambarimieru2.png" alt="sample">
-          <img src="projects/gambarimieru1.jpg" alt="sample" width="92%" height="200px">
-          <p>
-            <b>【作業期間】</b>2016年12月 約2日間<br>
-            <b>【作業ボリューム】</b>企画の立案, 画面のUI設計, 画面のビジュアルの制作, 実装<br>
-            <b>【人数】</b>5人<br>
-            <b>【担当工程】</b>企画の立案, 画面のUI設計, 実装<br>
-            <b>【使用ツール】</b>MIT App Inventor<br>アプリ制作には、単純なアプリの実装に特化した、MIT App Inventorというツールを用いるという制約がありました。そのため、画面遷移とボタンによる表示の変化のみを実装しました。<br>
-            <b>【使用言語】</b>MIT App Inventor<br>
-            <b>【対応ディバイス】</b>Android<br>
-            <b>【制作したきっかけ】</b>株式会社ベネッセのインターンシップ　Digital Plan Workshop　にて、 【『Digital』を活用した教育サービスとして、100万に影響を与えるようなアプリケーションを考える】というミッションのインターンで制作しました。<br>
-            <b>【成果】</b>最優秀賞を受賞しました。
-            <br>
-            <br>
-            <b>【コンセプト】</b>
-            <br>これは、中学生の女の子の、部活でレギュラー発表の後、選ばれた子とそうでない子との発言力に大きな差が生まれたり、仲がギクシャクしたりしてしまう。という悩みがあることを、リサーチで聞いた事がきっかけで生まれました。
-            <br><br>
-            努力って、レギュラーに選ばれるとか、ソロをもらえるとか、何か大きな結果として見えるようになるまで、気付かれない。先生にも見てもらえない。
-            <br>
-            <br>
-            けど、大きな結果が出る前に、きっとその子は小さな努力を積み重ねて、小さな結果を出し続けてるはず。
-            <br><br>
-            その過程をなんとか、
-            <br>
-            生徒は、先生から応援してもらえて、明日も頑張ろうと思えるように、
-            <br>先生は、その生徒の積み重ね途中の努力に気づけて、個々を見られるように。
-            <br>
-            <br>
-            <b>【詳細】</b>
-            <br>
-            まず、企画の立案の際に、チームメンバーの身近な人に電話でリサーチを行いました。そして、ターゲットを、中学校の30名以上の部員数を抱える部に所属する生徒と顧問の先生に絞りました。焦点を当てたのは、生徒の「先生から、個人としてなかなか見てもらえない」という問題点と、先生の「教育者として部員一人一人を見たいが、負担が多くて全員をみることができない」という問題点です。
-            <br><br>
-            生徒の努力は、大きな結果を出すまで気づかれにくいです。しかし、大きな結果を出す前に、きっとその子は小さな努力を積み重ねて、小さな結果を出し続けています。
-            <br><br>
-            したがって、その過程を、
-            <br>生徒は、先生から応援してもらえる機会が増えれば、
-            <br>先生は、その生徒の積み重ねの途中の努力に気付くことが出来れば、
-            <br>問題の解決につながると考えました。
-            <br><br>
-            そこで2つの問題を解決するために制作したものが、生徒の頑張りを可視化し、先生はそれに手早くリアクションすることができるアプリです。生徒は自主トレーニングなどの結果を入力し、先生はそれを見ることができます。通勤途中に簡単に操作ができるというアプリの強みと、先生の負担を減らすという目的から、先生のリアクションはスタンプに制限しました。また、先生が口で褒めやすいように、生徒が入力したデータを分析し、その子の頑張りの特徴を示してくれる機能を提案しました。
-            <br><br>
-            インターンシップの成果発表の後には、社員の方々に、「これはもし全国の生徒が利用するようになったら、文化になるかもしれない。」というアドバイスをいただきました。もし、全国の部活に所属する生徒が、自主トレーニングメニューを共有するようになったら、甲子園で強い学校の自主トレメニューが注目されたり、成長期特有の悩みを解決するトレーニング法を参考にしたりすることができるかもしれません。そして、TwitterやInstagramのような、1つの文化になる可能性がある、ということに気付くことができました。
-          <p>
-        </div>
-        <hr>
-
-        <div class="" id="kyun">
-          <h3 id="">くりっきゅん　chrome拡張</h3>
-          <iframe src="https://player.vimeo.com/video/201389070" width="640" height="371" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-<p><a href="https://vimeo.com/201389070">くりっきゅん</a> from <a href="https://vimeo.com/user47875405">ma286</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
-          <p>
-            <b>【作業期間】</b>2016年11月 約2週間<br>
-            <b>【作業ボリューム】</b>企コンセプト設計, 制作物の決定, ビジュアル設計, 実装<br>
-            <b>【人数】</b>2人<br>
-            <b>【担当工程】</b>コンセプト設計, 制作物の決定, ビジュアル設計, 実装<br>
-            <b>【使用ツール】</b>Atom, Photoshop<br>
-            <b>【使用言語】</b>HTML, CSS, JavaScript<br>
-            <b>【対応ディバイス】</b>PC（chome）<br>
-            <b>【制作したきっかけ】</b><a href="http://hacku.yahoo.co.jp/girlshacku2016/" target="_blank">Girls Hack U 2016</a>への参加がきっかけです。開発テーマは「きゅん」です。<br>
-            <br>
-            <b>【コンセプト】</b>
-            <br>
-            知り合いの、いつもと違う一面が見えたとき、クリームシチューにハートのにんじんが入っていたとき、思わずきゅん。としませんか。
-            <br>
-            <br>
-            そこで私たちは、多くの人たちが見慣れているWebページに着目しました。いつものWebページを何気なく見ていると、意識していなかったところからキラキラが溢れ出すchrome拡張を制作しました。ここには意外性が2つ、盛り込まれています。
-            <br>
-            <br>
-            まず私たちは、「きゅん」とは何かと考えた結果、知り合いのいつもと違う一面が見えた時や、クリームシチューのにんじんがハートだった時に、「きゅん」を感じると思いました。つまり「きゅん」は、日常生活に溶け込んでいる "さりげない意外性"、"紛れ込んだ非日常性（ギャップ）"だと考えました。
-            <br>
-            <br>
-            1つめは、意識していなかった場所に目がいってしまう、という意外性です。Webページでは、自分が押すリンク以外は普段意識することがほとんどありません。例えば、いつもYahoo！のトップページを開いたら、まず天気を見る人がいるとします。きっとその人は、トップページでは、天気へのリンク以外は見ていません。私もそうです。意識していなかったところから、キラキラが溢れてくることにより、意識してしまう。これが意外性であり、「きゅん」であると、私たちは考えました。
-            <br>
-            <br>
-            2つめは、昔を彷彿とさせる意外性です。このくりっきゅんの利用者には、20~40歳の女性を想定しています。私たちが昔見た “ セーラームーン ” のようなアニメは、子供の頃は憧れを抱き見ていましたが、大人になるとまったく見なくなります。彼女たちの存在を思い出すことは、私たちにとって “ 非日常 " です。くりっきゅんには、彼女たちを彷彿とさせるデザインを盛り込みました。
-            <br>
-            <br>
-            リンクを触れたときに出てくるキラキラは、変身シーンの溢れるキラキラを、クリックした際に浮かびあがるハートは、コスチュームを意味しています。
-            <br>
-            <br>
-            リンクから出るキラキラがピンク色であることにも意味があります。心理学の視点から見ると、女性は子供の頃は大人っぽい印象を与える水色を好む傾向があり、大人になると幼い印象を与えるピンクを好む傾向があるそうです。その理由は、子供の頃は大人っぽくなりたいという気持ちが強く、大人になると反対に可愛らしくなりたいという気持ちが出てくるためだと言われています。以上ような観点から、幼い印象を与え、昔を彷彿とさせるために、ピンク色を選びました。
-          </p>
-        </div>
-        <hr>
-
-        <div class=" ">
-          <h3 id="">ポートフォリオサイト</h3>
-          <p>
-            貴家万里加の成果をまとめた、本ポートフォリオサイトです。
-            <br>
-            設計から、コーディングまですべてを行いました。作品と、その作品を通して作成者の人となりが伝わるように工夫をしました。
-            <br>
-            <br>
-            メインコンテンツが左側、サイドバーが右側なのは、よりメインコンテンツの文章を読んでもらいやすくするためです。Webサイトでは人の視線は左から右、上から下へと動くことが多いと言われています。
-            <br>
-            <br>
-            projectページは、作品を1つのページにまとめました。より多くの作品に目を通してもらいやすくするため、ページを移動する際に発生する情報を読み込む時間を省き、スライドするだけですべての作品に目を通すことができるようにしました。
-          </p>
-          <p><i class="fa fa-calendar-o" aria-hidden="true"></i>2017.1 / <i class="fa fa-user"></i>製作 / <i class="fa fa-briefcase">Sublime Text</i></p>
-        </div>
-        <hr>    
-
-        <div class=" " id="name">
-          <h3 id="">名前　ロゴ制作</h3>
-          <img src="projects/name_logo1.JPG" alt="sample" width="200px" height="200px">
-          <img src="projects/name_logo2.JPG" alt="sample" width="200px" height="200px">
-          <p>
-            Processingを用いて、自分の名前のロゴを制作しました。
-            <br>
-            それぞれのアルファベットを、パソコンが文字を扱うときに用いられるUnicodeという数値に変換しました。その数値に大きさや色、重さを付け、グラフィックにしました。
-          </p>
-        </div>
-        <hr>
-        <div class=" " id="math">
-          <h3 id="">愛宕小学校　身の周りにある算数</h3>
-          <img src="projects/atago.jpg" alt="sample" width="200px" height="200px">
-          <p>小学校6年生の授業で、「身のまわりにある算数を探そう」というテーマの授業を行いました。
-          <br>
-          <br>
-          理科や社会と比べ、算数や数学は将来何のために役に立つのかよくわからないという声を多く聞きます。しかし、実は算数も、他の視点から見てみると、自分の興味との接点や意外な一面があることに気づくことができます。例として、舞台演出や、アニメーションなどがあります。
-          <br>
-          <br>
-          私はこれらの面白さに、大学に入ってから気づきました。これにもっと早く子供たちが気づくきっかけを作りたいと思い、小学校の先生に提案し、授業を開催しました。
-          </p>
+        <div class="inner">    
+            <div class="row">
+                <div class="col-md-6">
+                    <a href="#">
+                        <img class="img-responsive" src="projects/gambarimieru2_2.png" alt="">
+                    </a>
+                    <h4>
+                        <a href="gambarimieru.html">がんばりみえるくん</a>
+                    </h4>
+                    <p>Android App / MIT App Inventor</p>
+                </div>
+                <div class="col-md-6">
+                    <a href="#">
+                        <img class="img-responsive" src="projects/jins_visualization.png" alt="">
+                    </a>
+                    <h4>
+                        <a href="#">心と体の可視化</a>
+                    </h4>
+                    <p>coding</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <a href="#">
+                        <img class="img-responsive" src="projects/kyun_2.png" alt="">
+                    </a>
+                    <h4>
+                        <a href="#">くりっきゅん</a>
+                    </h4>
+                    <p>coding / design</p>
+                </div>
+                <div class="col-md-6">
+                    <a href="#">
+                        <img class="img-responsive" src="projects/name_logo2_2.JPG" alt="">
+                    </a>
+                    <h4>
+                        <a href="#">名前のロゴ</a>
+                    </h4>
+                    <p>coding / design / logo</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <a href="#">
+                        <img class="img-responsive" src="http://placehold.it/700x400" alt="">
+                    </a>
+                    <h4>
+                        <a href="#">ポートフォリオ</a>
+                    </h4>
+                    <p>coding / design</p>
+                </div>
+                <div class="col-md-6">
+                    <a href="#">
+                        <img class="img-responsive" src="projects/atago_2.jpg" alt="">
+                    </a>
+                    <h4>
+                        <a href="#">小学校</a>
+                    </h4>
+                    <p>Leader</p>
+                </div>
+            </div>
         </div>
       </div>
     </div>

@@ -1,54 +1,85 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <meta charset="utf-8">
-    <title>kiya portfolio</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script> -->
-    <!-- <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> -->
-    <!-- <script type="text/javascript" src="js/jquery.smoothScroll.js"></script> -->
+  <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
-    <script type="text/javascript" src="js/jquery.js"></script>
-    <script src="js/smooth-scroll.js"></script>
-  </head>
-  <body>
-    <div class="container-fluid">
-      <!-- デスクトップ：右　スマホ：上 -->
-      <div id="side" class="side">
-        <img src="img/sample.jpg" alt="sample" width="200px" height="200px"><br>
-        <a href="index.html"><h2>Marika Kiya</h2></a>
-        <a href="profile.html">Profile</a><br>
-        <a href="projects.html">Projects</a><br>
+  <link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+  <link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+  <link rel="stylesheet" href="css/timeline-profile.css"> 
+    
+  <title>KIYA PORTFOLIO</title>
+</head>
+<body class="profile">
+  <header class="side">
+    <div id="side" class="side" >
+        <p><a href="index.html"><span>Marika Kiya</span></a></p>
+        <a href="profile.html" class="side_btn">Profile</a><br>
+        <a href="index.html" class="side_btn">Projects</a><br>
       </div>
-
-      <!-- デスクトップ：左　スマホ：下 -->
-      <div id="main" class="main">
-        <h4>貴家 万里加</h4>
-        <h4>Marika Kiya</h4>
-        <br>
-        1995年生まれ。
-        <br>
-        中高では合唱部に入っており、今でも歌が好きです。
-        <br>
-        ミュージカル・着物の着付け・発達障害などに興味があります。
-        <br>
-        <br>
-        <h4>more</h4>
-        <ul id="more" style="list-style:none;">
-          <li><a href="https://www.wantedly.com/secret_profiles/GqOfEvWU-ITQzaJi4h9N_bgLTJOW7OmZ" target="_blank">- Wantedly</a></li>
-          <li><a href="https://www.facebook.com/marika.kiya" target="_blank">- Facebook</a></li>
-          
+  </header>
+  <main class="cd-main-content">
+    <div class="cd-scrolling-bg cd-color-2">
+      <div class="cd-container center">  
+      <h2>PROFILE</h2>
+      <hr>
+        <ul class='timeline'>
+          <li class="year first">1995</li>
+          <li class='event offset-first'>
+            東京都八王子市で生まれました。
+            <br>家から幼稚園・小学校・最寄り駅まで横断歩道を渡らずに行ける環境でした。長い間この環境が当たり前だと思っていました。
+          </li>
+          <li class="event">
+            4歳下の性格の違う弟が生まれました。
+            <br>弟から大きな影響を受けながら育ちました。
+          </li>
+          <li class="year">2001</li>
+          <li class='event offset-first'>
+            小学校では、外で遊ぶことと絵を描くことが好きでした。
+            <br>洋服が好きで、いつも絵を描いていました。
+          </li>
+          <li class="event">
+            中学・高校では、コーラス部に所属し、ソプラノのパートリーダーを担当していました。
+            <br>家と学校の往復がほとんどだったため、とても狭い世界に生きていました。高校生の時にインターネットで自分と同じ年の子達が個人で活躍している姿を見かけて衝撃を受けました。
+          </li>
+          <li class="year">2013</li>
+          <li class="event offset-first">
+            大学に入学。
+            <br>プログラミングから、プロジェクトの運用、セキュリティ、ハードウェアまで浅く広く学んでいます。
+            <br>大学3年生から人工知能の研究室に所属。
+            <br>教職も履修しています。
+          </li>
+          <li class='event'>
+            Life is Tech ! にて、メディアアートコースメンター、メディアアートコースカリキュラムリーダーとして働いています。Life is Tech ! とは、中高生のためのプログラミングスクール・キャンプを行っている企業です。
+          </li>
+          <li class='event'>
+            HACK DAYに参加しました。
+            <br>これが初めてのハッカソンでした。
+          </li>
+          <li class="year">2015</li>
+          <li class="event offset-first">
+            OFFICE HIRAI にて、インターンをしています。
+            <br>OFFICE HIRAIは、発達障害を持った子供とその保護者の方をサポートをしている企業です。
+            <br>私はSNSの運用や広告の管理などを行っています。
+          </li>
+          <li class="event">
+            株式会社SECOMの海外事業部、Thai Secom Security Co., Ltd. （タイ バンコク）にて1か月間働きました。
+            <br>タイのセキュリティ事情と、WEB運用について学びました。
+          </li>          
+          <li class="event">
+            株式会社ベネッセコーポレーションのインターンシップ Digital Plan Workshop に参加しました。100万人に影響を与えるデジタル教育サービス。
+          </li>
+          <li class='event'>
+            GIRLS HACK U に参加しました。
+            <br>
+            人が感じる「きゅん」について考え抜きました。
+          </li>
         </ul>
       </div>
     </div>
-
-    <!-- Javascript -->
-		<script src="js/smooth-scroll.js"></script>
-		<script>
-			smoothScroll.init();
-		</script>
-  </body>
+  </main>
+</body>
 </html>

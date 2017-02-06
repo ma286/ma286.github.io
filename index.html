@@ -1,44 +1,64 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <meta charset="utf-8">
-    <title>kiya portfolio</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <br>
-    <div class="container-fluid">
-        <!-- デスクトップ：右　スマホ：上 -->
-        <div id="side" class="side" >
-          <img src="img/sample.jpg" alt="sample" width="200px" height="200px"><br>
-          <a href="index.html"><h2>Marika Kiya</h2></a>
-          <a href="profile.html">Profile</a><br>
-          <a href="projects.html">Projects</a><br>
-        </div>
-        <!-- デスクトップ：左　スマホ：下 -->
-        <div id="main" class="main">
-          <div class="col-xs-6" >
-          <a href="projects.html#digital_app"><img src="projects/gambarimieru2.png" alt="sample" width="200px" height="200px"><br>
-          Androidアプリ「がんばりみえるくん」</a><br>
-          </div><br>
-          <div class="proj1 col-xs-6">
-          <a href="projects.html#math">
-          <img src="projects/atago.jpg" alt="sample" width="200px" height="200px"><br>
-          ワークショップ「身の回りにある算数を探そう」</a>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+  <link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+    
+  <title>KIYA PORTFOLIO</title>
+</head>
+<body class="index">
+  <header class="side">
+    <div id="side" class="side" >
+        <p><a href="index.html"><span>Marika Kiya</span></a></p>
+        <a href="profile.html" class="side_btn">Profile</a><br>
+        <a href="index.html" class="side_btn">Projects</a><br>
+      </div>
+  </header>
+  <main class="cd-main-content">
+    <div class="cd-scrolling-bg cd-color-4">
+      <div class="cd-container">
+      <h2>PROJECT</h2>
+      <hr>
+        <div class="row" >
+          <div class="col-xs-6">
+            <a href="gambarimieru.html"><img src="projects/gambarimieru2.png" alt="sample" width="200px" height="200px"><br>
+            Androidアプリ「がんばりみえるくん」</a><br>
           </div>
-          <div class="proj2 col-xs-6">
-          <a href="projects.html#kyun"><img src="projects/kyun.png" alt="sample" width="200px" height="200px"><br>chrome拡張 くりっきゅん</a></div>  
-               
           <div class="col-xs-6">
-          <a href="projects.html#jins_visualization"><img src="projects/jins_visualization.png" alt="sample" width="200px" height="200px"><br>
-          心と体のVisualize</a></div>
-          <div class="col-xs-6">
-          <a href=""><img src="img/sample.jpg" alt="sample" width="200px" height="200px"><br>
-          ポートフォリオ</a></div>
-          <div class="col-xs-6">
-          <a href="projects.html#name"><img src="projects/name_logo1.JPG" alt="sample" width="200px" height="200px"><br>
-          名前　ロゴ</a></div>
+            <a href="math-workshop.html">
+            <img src="projects/atago.jpg" alt="sample" width="200px" height="200px"><br>
+            ワークショップ「身の回りにある算数を探そう」</a>
+          </div>
         </div>
+
+        <div class="row">
+          <div class="col-xs-6">
+            <a href="kyun.html"><img src="projects/kyun.png" alt="sample" width="200px" height="200px"><br>Chrome拡張 くりっきゅん</a>
+          </div>                 
+          <div class="col-xs-6">
+            <a href="jins_visualization.html"><img src="projects/jins_visualization.png" alt="sample" width="200px" height="200px"><br>
+            心と体のVisualize</a>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-xs-6">
+            <a href=""><img src="img/sample.jpg" alt="sample" width="200px" height="200px"><br>
+            ポートフォリオ</a>
+          </div>
+          <div class="col-xs-6">
+            <a href="name-logo.html"><img src="projects/name_logo1.JPG" alt="sample" width="200px" height="200px"><br>
+            名前　ロゴ</a>
+          </div>
+        </div> 
+
+      </div>
     </div>
+  </main>
+</body>
 </html>

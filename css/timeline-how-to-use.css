@@ -1,0 +1,148 @@
+
+div.how-to-use *, div.how-to-use *:after, div.how-to-use *:before {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+div.how-to-use * {
+  box-sizing: border-box;
+}
+div.how-to-use ul{
+  color: #575757;
+}
+
+
+div.how-to-use ul {
+  position: relative;
+  overflow: hidden;
+  list-style: none;
+  width: 800px;
+  margin: 30px auto;
+  padding: 0;
+}
+
+div.how-to-use ul:after {
+  content:"";
+  z-index: 1;
+  position: absolute;
+  left: 50%;
+  top:0;
+  width: 4px;
+  margin-left: -2px;
+  min-height: 100%;
+  background-color: #eee;
+}
+
+div.how-to-use li {
+  z-index: 2;
+  position: relative;
+  width: 380px;
+  padding: 20px;
+  float: left;
+  margin-bottom: 30px;
+  background-color: #eee;
+}
+
+div.how-to-use li.left {
+  float: left;
+  clear: left;
+}
+
+div.how-to-use li.right {
+  float: right;
+  clear: right;
+}
+
+div.how-to-use li.highlight {
+  float: none;
+  clear: both;
+  width: auto;
+  border: 5px solid #fff;
+}
+
+/* arrow */
+
+div.how-to-use li:before {
+  content:"";
+  z-index: 1;
+  position: absolute;
+  top: 14px;
+  right: -6px;
+  left: -6px;
+  width: 12px;
+  height: 12px;
+  background-color: #eee;
+  transform: rotate(45deg);
+}
+
+div.how-to-use li.left:before {
+  left: auto;
+}
+
+div.how-to-use li.right + li.left:before,
+div.how-to-use li.left + li.right:before {
+  top: 36px;
+}
+
+div.how-to-use li.highlight:before {
+  left: 50%;
+  margin-left: -6px;
+  right: auto;
+  top: -6px;
+}
+
+/* dot */
+
+div.how-to-use li:after {
+  content:"";
+  z-index: 1;
+  position: absolute;
+  top: 14px;
+  right: -27px;
+  left: -27px;
+  width: 8px;
+  height: 8px;
+  border: 3px solid #fff;
+  border-radius: 100%;
+  background-color: #ccc;
+  transition: .2s;
+}
+
+div.how-to-use li:hover:after {
+  background-color: #999;
+  top: 12px;
+  right: -29px;
+  left: -29px;
+  width: 12px;
+  height: 12px;
+}
+
+div.how-to-use li.left:after {
+  left: auto;
+}
+
+div.how-to-use li.right + li.left:after,
+div.how-to-use li.left + li.right:after {
+  top: 36px;
+}
+
+div.how-to-use li.right + li.left:hover:after,
+div.how-to-use li.left + li.right:hover:after {
+  top: 34px;
+}
+
+div.how-to-use li.right:after {
+  right: auto;
+}
+
+div.how-to-use li.highlight:after {
+  left: 50%;
+  margin-left: -7px;
+  right: auto;
+  top: -24px;
+}
+
+div.how-to-use li.highlight:hover:after {
+  margin-left: -9px;
+  top: -26px;
+}
