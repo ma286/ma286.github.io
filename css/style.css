@@ -1,3 +1,5 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+
 body{
   /*font-family:Avenir , "Open Sans" , "Helvetica Neue" , Helvetica , Arial , Verdana , Roboto , "游ゴシック" , "Yu Gothic" , "游ゴシック体" , "YuGothic" , "ヒラギノ角ゴ Pro W3" , "Hiragino Kaku Gothic Pro" , "Meiryo UI" , "メイリオ" , Meiryo , "ＭＳ Ｐゴシック" , "MS PGothic" , sans-serif;*/
   font-family: 'Source Sans Pro', Helvetica, 'Yu Gothic', YuGothic, 'Hiragino Kaku Gothic Pro';
@@ -124,28 +126,42 @@ hr {
 hr {
   background-color: rgb(211, 45, 105);
 }
-.mission hr, .design hr, .profile hr, .center hr{  
+.mission hr, .profile hr, .center hr{  
   margin-left: auto;
 }
 
+body.kyun .cd-fixed-bg h4, body.math-workshop h4, body.name-logo h4{
+  font-family: 'Noto Sans Japanese', serif;
+}
 .cd-fixed-bg h4, .center-wrap h4{
+/*
+  text-align: center;
+  font-size: 30px;
+  font-size: 1.875rem;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.0);
+  color: white;
+*/
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  bottom: auto;
+  right: auto;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -o-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  width: 90%;
 
   max-width: 1170px;
   font-size: 30px;
   font-size: 1.875rem;
   font-weight: 700;
   line-height: 2rem;  
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0);
   color: white;
-
-}
-
-.center-wrap p{
-  max-width: 1170px;
-  /*font-size: 30px;*/
-  /*font-size: 1.875rem;*/
-  /*font-weight: 300;*/
-  line-height: 3rem;
-  color: white;
+  /*margin-top: 20%;*/
 }
 
 h5 {
@@ -173,7 +189,7 @@ div.mission{
   /*color: #575757;*/
   text-align: center;
 }
-div.center {
+div.center, .center-wrap {
   text-align: center;
 }
 body.gambarimieru .cd-fixed-bg.cd-bg-1{
@@ -192,6 +208,12 @@ body.math-workshop .cd-fixed-bg.cd-bg-1{
   color: white;
   text-align: center;
   padding-top: 20%;
+}
+body.name-logo .cd-fixed-bg.cd-bg-1{
+  background-image: url("../img/bg-name-logo.jpg");
+}
+body.portfolio-site .cd-fixed-bg.cd-bg-1{
+  background-image: url("../img/bg-portfolio.jpg");
 }
 body.math-workshop .cd-fixed-bg.cd-bg-1 p{
   size: 60rem;
@@ -272,6 +294,11 @@ div.target-user div.back-white ul{
 }
 .cd-scrolling-bg.cd-color-light-kyn{
   background-color: rgba(50, 83, 114, 0.1);
+  color: #575757;
+}
+
+.cd-scrolling-bg.cd-color-pink{
+  background-color: rgba(172, 85, 122, 0.1);
   color: #575757;
 }
 
@@ -375,10 +402,10 @@ div.product-description div.back-white{
   /*margin-left: 500px;*/
   /*float: right;*/
   /*width: 200px;*/
-  width: 40%; /*40*/
+  width: 100%; /*40*/
   padding: 0px;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin: 50px auto;
+  /*margin-bottom: 50px;*/
   /*padding: 55px;*/
   /*padding-top: 55px;
   margin-bottom: 80px;*/
@@ -387,6 +414,9 @@ div.product-description div.back-white{
   font-weight: 300;
   font-size: 0.9rem;
 
+}
+header.side{
+  text-align: center;
 }
 
 .side_btn{  
@@ -507,8 +537,5 @@ body.kyun div.design div.row{
 }
 body.index .row{
   margin-bottom: 4rem;
-}
-.center-wrap{
-  text-align: center;
 }
 
