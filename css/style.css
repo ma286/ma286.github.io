@@ -1,21 +1,6 @@
 @import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
 
-body{
-  /*font-family:Avenir , "Open Sans" , "Helvetica Neue" , Helvetica , Arial , Verdana , Roboto , "游ゴシック" , "Yu Gothic" , "游ゴシック体" , "YuGothic" , "ヒラギノ角ゴ Pro W3" , "Hiragino Kaku Gothic Pro" , "Meiryo UI" , "メイリオ" , Meiryo , "ＭＳ Ｐゴシック" , "MS PGothic" , sans-serif;*/
-  font-family: 'Source Sans Pro', Helvetica, 'Yu Gothic', YuGothic, 'Hiragino Kaku Gothic Pro';
-  /*font-family: 'Source Sans Pro', Helvetica, 'Yu Gothic', YuGothic, 'Hiragino Gothic';*/
-  letter-spacing: 0.05rem; /*0.08rem*/
 
-  color: #575757;
-  /*font-size: 10px;*/
-  font-style: normal;
-  font-weight: 300;
-  /*letter-spacing: 0.08em;*/
-  width: 100%;
-  height: auto;
-  line-height: 22px; /*27*/
-
-}
 
 /*  */
 /* -------------------------------- 
@@ -34,11 +19,22 @@ html * {
   box-sizing: border-box;
 }
 
-body {
+body{  
+  font-family: "Roboto", 'Hiragino Kaku Gothic Pro', sans-serif ;
+  letter-spacing: 0.05rem; /*0.08rem*/
+
+  color: #575757;
+  /*font-size: 10px;*/
+  font-style: normal;
+  font-weight: 300;
+  /*letter-spacing: 0.08em;*/
+  width: 100%;
+  height: auto;
+  line-height: 22px; /*27*/  
   font-size: 100%;
-  font-family: "Roboto", 'Hiragino Kaku Gothic Pro', sans-serif, 'Source Sans Pro', Helvetica ;
   color: #575757;
   background-color: white;
+
 }
 
 body, html {
