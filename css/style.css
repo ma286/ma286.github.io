@@ -232,7 +232,20 @@ div.target-user div.back-white ul{
   margin-right: 0;
 }
 
+div.solution img{ /* media */
+  max-width: 100%;
+  margin: auto;
+  margin-top: 2rem;
+}
+
 @media only screen and (min-width: 768px) {
+
+  div.solution img{ /* media */
+    max-width: 80%;
+    margin: auto;
+    margin-top: 2rem;
+  }
+
   .cd-fixed-bg h4 {
     font-size: 36px;
   }
@@ -436,7 +449,6 @@ header.side{
 @media screen and ( min-width:992px )
 {
 
-
   #side{
     position: fixed;
     right: -webkit-calc(100px - 10px * 5) ;
@@ -516,11 +528,6 @@ body.gambarimieru div.product-description div.row{
 div.list-disc ul{
   margin-left: 1.5rem;
   list-style-type: disc;
-}
-div.solution img{
-  max-width: 80%;
-  margin: auto;
-  margin-top: 2rem;
 }
 body.kyun div.design div.row{
   margin-top: 3rem;
