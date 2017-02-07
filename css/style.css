@@ -1,5 +1,5 @@
-
-
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
+@import url(//fonts.googleapis.com/earlyaccess/notosansjapanese.css);
 /*  */
 /* -------------------------------- 
 
@@ -235,7 +235,7 @@ div.target-user div.back-white ul{
 div.solution img{ /* media */
   max-width: 100%;
   margin: auto;
-  margin-top: 2rem;
+  margin-top: 0rem;
 }
 
 @media only screen and (min-width: 768px) {
@@ -360,12 +360,14 @@ div.videoWrapper{
   overflow: hidden;
 
 }
-div.videoWrapper iframe{
-  position: absolute;
-  top: 0;
-  left: 0;
+iframe{
+  /*position: absolute;*/
+  /*top: 0;*/
+  /*left: 0;*/
+  /*max-width: */
   width: 100%;
   height: 100%;
+  min-height: 360px;
 }
 div.about-A div.back-white{
   background: rgba(255, 255, 255,0.8);
@@ -451,9 +453,8 @@ header.side{
 
   #side{
     position: fixed;
-    right: -webkit-calc(100px - 10px * 5) ;
-    right: : calc(100px - 10px * 5) ;
-    width: -webkit-calc(200px);
+    right: 50px; /* 100px - 10px * 5 */
+    width: 200px;
     margin: 0px;
     padding: 10px;
   }
