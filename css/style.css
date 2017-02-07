@@ -373,10 +373,6 @@ div.product-description div.back-white{
   margin: auto;
   text-align: center;
 }
-.col-md-8{
-    padding-right: 150px;
-    padding-left: 150px;
-}
 #main{
   width: 100%;
   margin: 0px;
@@ -528,8 +524,5 @@ div.solution img{
 }
 body.kyun div.design div.row{
   margin-top: 3rem;
-}
-body.index .row{
-  margin-bottom: 4rem;
 }
 
