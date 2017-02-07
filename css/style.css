@@ -83,7 +83,7 @@ Main components
   background-position: center center;
   z-index: 1;
 
-  padding: 4em 4em;
+  padding: 4em 0.5em;
 
 }
 .cd-fixed-bg.about-A {
@@ -251,7 +251,7 @@ div.target-user div.back-white ul{
 .cd-scrolling-bg {
   position: relative;
   min-height: 40%; /* 100% */
-  padding: 4em 4em; /* 4em 0 */
+  padding: 4em 0.5em; /* 4em 0 */
   line-height: 1.6; /*1.6*/
   z-index: 2;
 }
@@ -306,7 +306,7 @@ div.target-user div.back-white ul{
     font-size: 20px;
     font-size: 0.8rem; /* 1.25 */
     line-height: 2;
-    font-weight: 300;
+    font-weight: 300;    
   }
   section{
     padding: 3em 0;
