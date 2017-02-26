@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
 @import url(//fonts.googleapis.com/earlyaccess/notosansjapanese.css);
 /*  */
-/* -------------------------------- 
+/* --------------------------------
 
 Primary style
 
@@ -17,7 +17,7 @@ html * {
   box-sizing: border-box;
 }
 
-body{  
+body{
   font-family: "Open Sans", 'Hiragino Kaku Gothic Pro', sans-serif ;
   letter-spacing: 0.05rem; /*0.08rem*/
 
@@ -28,7 +28,7 @@ body{
   /*letter-spacing: 0.08em;*/
   width: 100%;
   height: auto;
-  line-height: 22px; /*27*/  
+  line-height: 22px; /*27*/
   font-size: 100%;
   color: #575757;
   background-color: white;
@@ -45,7 +45,7 @@ a {
   text-decoration: none;
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
 Modules - reusable parts of our design
 
@@ -63,9 +63,9 @@ Modules - reusable parts of our design
   clear: both;
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
-Main components 
+Main components
 
 -------------------------------- */
 
@@ -99,7 +99,7 @@ h1, h2 {
 h3{
   max-width: 1170px;
   font-size: 30px;
-  font-size: 1.2rem; /* 1.875rem */  
+  font-size: 1.2rem; /* 1.875rem */
   font-weight: bold;
 }
 
@@ -114,13 +114,13 @@ hr {
   margin-bottom: 40px;
   margin-top: 10px;
   margin-left: 0px;
-  background-color: #575757; 
+  background-color: #575757;
   border: 0;
 }
 hr {
   background-color: rgb(211, 45, 105);
 }
-.mission hr, .profile hr, .center hr{  
+.mission hr, .profile hr, .center hr{
   margin-left: auto;
 }
 
@@ -152,7 +152,7 @@ body.kyun .cd-fixed-bg h4, body.math-workshop h4, body.name-logo h4, body.gambar
   font-size: 30px;
   font-size: 1.875rem;
   font-weight: 700;
-  line-height: 2rem;  
+  line-height: 2rem;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0);
   color: white;
   /*margin-top: 20%;*/
@@ -177,7 +177,7 @@ h5 {
 }
 
 body.jins_visualization .cd-fixed-bg.cd-bg-1{
-  background-image: url("../projects/international-space-station.jpg");  
+  background-image: url("../projects/international-space-station.jpg");
 }
 div.mission{
   /*color: #575757;*/
@@ -187,7 +187,7 @@ div.center, .center-wrap {
   text-align: center;
 }
 body.gambarimieru .cd-fixed-bg.cd-bg-1{
-  background-image: url("../projects/school-ground2.jpg");  
+  background-image: url("../projects/school-ground2.jpg");
 }
 body.gambarimieru .cd-fixed-bg.cd-bg-2{
   background-image: url("../img/bg-smartphone.jpeg");
@@ -276,7 +276,7 @@ div.solution img{ /* media */
   background-color: #ffffff;
   color: #575757;
 }
-.cd-scrolling-bg.cd-color-4 {  
+.cd-scrolling-bg.cd-color-4 {
   background: rgba(15, 70, 112, 0.1);
 /*  background-image: radial-gradient(#ffffee 20%, transparent 0), radial-gradient(#ffffee 20%, transparent 0);
   background-position: 0 0, 10px 10px;
@@ -319,7 +319,7 @@ div.solution img{ /* media */
     font-size: 20px;
     font-size: 0.8rem; /* 1.25 */
     line-height: 2;
-    font-weight: 300;    
+    font-weight: 300;
   }
   section{
     padding: 3em 0;
@@ -415,7 +415,7 @@ div.product-description div.back-white{
   /*padding-top: 55px;
   margin-bottom: 80px;*/
   text-align: center;
-  color: #575757;  
+  color: #575757;
   font-weight: 300;
   font-size: 0.9rem;
 
@@ -424,7 +424,7 @@ header.side{
   text-align: center;
 }
 
-.side_btn{  
+.side_btn{
   transition: all .5s;
   display: inline-block;
   text-decoration: none;
@@ -494,7 +494,7 @@ table th{
   /*padding-top: 0px;*/
 }
 table td{
-  padding-left: 50px; 
+  padding-left: 50px;
   padding-top: 5px;
 }
 .product-description table th{
@@ -533,4 +533,3 @@ div.list-disc ul{
 body.kyun div.design div.row{
   margin-top: 3rem;
 }
-
